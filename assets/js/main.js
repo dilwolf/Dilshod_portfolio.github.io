@@ -279,6 +279,56 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+    }
   });
 }
+
+// i18n
+(function () {
+  var translations = {};
+  var currentLang = localStorage.getItem('lang') || 'en';
+
+  function updateToggleButton(lang) {
+    var flag = document.getElementById('lang-flag');
+    var text = document.getElementById('lang-text');
+    if (lang === 'en') {
+      if (flag) flag.src = 'https://flagicons.lipis.dev/flags/4x3/kr.svg';
+      if (text) text.textContent = '한국어';
+    } else {
+      if (flag) flag.src = 'https://flagicons.lipis.dev/flags/4x3/gb.svg';
+      if (text) text.textContent = 'English';
+    }
+  }
+
+  function applyTranslations(lang) {
+    var t = translations[lang];
+    if (!t) return;
+
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+
+    document.querySelectorAll('[data-i18n-href]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-href');
+      if (t[key] !== undefined) el.href = t[key];
+    });
+
+    document.documentElement.lang = lang === 'ko' ? 'ko' : 'en';
+    document.title = lang === 'ko' ? '딜숏의 포트폴리오' : "Dilshod's Portfolio";
+    updateToggleButton(lang);
+    currentLang = lang;
+  }
+
+  window.setLang = function (lang) {
+    localStorage.setItem('lang', lang);
+    applyTranslations(lang);
+  };
+
+  window.toggleLang = function () {
+    window.setLang(currentLang === 'en' ? 'ko' : 'en');
+  };
+
+  translations = window.TRANSLATIONS || {};
+  applyTranslations(currentLang);
+})();

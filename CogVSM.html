@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -39,7 +39,10 @@
   <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
-
+    <a id="lang-btn" href="#" onclick="toggleLang(); return false;" class="flag-button">
+      <img id="lang-flag" src="https://flagicons.lipis.dev/flags/4x3/kr.svg" alt="Flag" class="flag-icon">
+      <span id="lang-text" class="flag-text">한국어</span>
+    </a>
   </header><!-- End Header -->
 
     <!-- ======= Services Section ======= -->
@@ -48,7 +51,7 @@
         <div class="row"> 
 
         <div style="text-align: center; width: 40%; margin-bottom: 0%; margin-top: 5%;">
-          <h2 style="color:#085a98;">Deep Reinforcement Learning-Empowered Cost-Effective Federated Video Surveillance Management Framework</h2>
+          <h2 style="color:#085a98;" data-i18n="cogvsm.page_title">Deep Reinforcement Learning-Empowered Cost-Effective Federated Video Surveillance Management Framework</h2>
 
         </div>
 
@@ -61,8 +64,8 @@
         </div>
 
         <div class="icon-box iconbox-teal" data-aos="zoom-in" data-aos-delay="300" style="width: 100%; margin-top: 20px;margin-bottom: 20px;">
-          <h2 style="font-family: 'Poppins', sans-serif; font-size: 24px; color: #f8893f; margin-bottom: 18px; text-align: center;">Enhancing Video Surveillance Efficiency with Deep Learning and Edge Computing</h2>
-          <p style="text-align: justify; font-size: 15px; margin-left: 5%; margin-right: 5%;">Video surveillance systems have become essential for safety and security, and the integration of deep learning (DL) has significantly improved their precision. 
+          <h2 style="font-family: 'Poppins', sans-serif; font-size: 24px; color: #f8893f; margin-bottom: 18px; text-align: center;" data-i18n="cogvsm.subtitle">Enhancing Video Surveillance Efficiency with Deep Learning and Edge Computing</h2>
+          <p style="text-align: justify; font-size: 15px; margin-left: 5%; margin-right: 5%;" data-i18n="cogvsm.intro">Video surveillance systems have become essential for safety and security, and the integration of deep learning (DL) has significantly improved their precision. 
             However, DL-based surveillance requires substantial computational and memory resources, particularly for tasks like <strong>object tracking</strong> and <strong>object tracking</strong>. 
             Traditional video surveillance systems keep using GPU recources regardless of object absence in the video frames.
             Some recent approaches, for exaple, The <a href="https://www.mdpi.com/1424-8220/21/12/4089"><strong>AdaMM framework</strong></a> uses a constant threshold for releasing DL models in hierarchical edge computing, 
@@ -86,10 +89,10 @@
           <!--   Introduction  -->
           <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="width:100%;">
             <div class="icon-box iconbox-blue">
-              <h3 style="color: rgb(0, 87, 105);"><strong>Introduction:</strong> Why Saving GPU Resources is So Crucial?</h3>
+              <h3 style="color: rgb(0, 87, 105);" data-i18n="cogvsm.intro_heading"><strong>Introduction:</strong> Why Saving GPU Resources is So Crucial?</h3>
               <br>
               <div class = "row">
-              <p style="text-align: justify; font-size: 15px; width: 40%; margin-left: 5%;">
+              <p style="text-align: justify; font-size: 15px; width: 40%; margin-left: 5%;" data-i18n="cogvsm.intro_body">
                 Efficient video surveillance, especially for abnormal behavior detection, heavily relies on Deep Learning (DL) models. 
                 These models require substantial GPU resources for tasks like <strong>object tracking</strong> and <strong>motion tracking</strong> in real-time.
                 However, all traditional keep using allocated GPU recource even through there is no object in the video feed. 
@@ -106,10 +109,10 @@
           <!--   Proposed framework  -->
           <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 3%; width: 100%;">
             <div class="icon-box iconbox-blue">
-              <h3 style="color: rgb(0, 87, 105);">Proposed Framework</h3>
+              <h3 style="color: rgb(0, 87, 105);" data-i18n="cogvsm.framework_heading">Proposed Framework</h3>
               <div class = "row">
                 <img src="assets/img/thesis/architect.png" style="width:60%; height: 70%; margin-left: 20%; margin-top: 20px">
-                <p style="text-align: justify; font-size: 14px;  margin-left: 10%; margin-right: 50%; margin-top: 0%; width: 80%; margin-top: 20px;" >
+                <p style="text-align: justify; font-size: 14px;  margin-left: 10%; margin-right: 50%; margin-top: 0%; width: 80%; margin-top: 20px;" data-i18n="cogvsm.framework_body">
                   The proposed video surveillance management system for hierarchical edge computing comprises two connected edge nodes. 
                   The first node handles object detection using the YOLO algorithm, while the second node manages future object occurrence predictions with an FL-based LSTM, a DQN-based controlling threshold, and motion-tracking modules. 
                   The system starts by receiving video frames from an IP camera at the first node, where detected objects and relevant information are sent to the second node for further processing. 
@@ -127,10 +130,10 @@
           <!--   Results  -->
           <div class="col-lg-3 col-md-5 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="width:100%;">
             <div class="icon-box iconbox-blue">
-              <h3 style="color: rgb(0, 87, 105);">Results</h3>
+              <h3 style="color: rgb(0, 87, 105);" data-i18n="cogvsm.results_heading">Results</h3>
               <br>
               <div class = "row">
-                <p style="text-align: justify; font-size: 15px; width: 40%; margin-left: 5%; margin-top: 5%;">
+                <p style="text-align: justify; font-size: 15px; width: 40%; margin-left: 5%; margin-top: 5%;" data-i18n="cogvsm.results_body">
                   The sample simulated video on the right demonstrates the <strong>real-time functionality</strong> of our project.
                   The video features two terminals:
                   <br>
@@ -154,7 +157,7 @@
           
           <!--   Feature items  -->
           <div class="section-title" style="font-size: 20px; margin-top: 5%; margin-bottom: 0%;">
-            <h2>Key Features</h2>
+            <h2 data-i18n="cogvsm.features_heading">Key Features</h2>
           </div>
 
           
@@ -167,7 +170,7 @@
                 </svg>
                 <i class="fa fa-server"></i>
               </div>
-              <h4><a href="">Two-tiered Edge Computing</a></h4>
+              <h4><a href="" data-i18n="cogvsm.feat1">Two-tiered Edge Computing</a></h4>
               <p></p>
             </div>
           </div>
@@ -182,7 +185,7 @@
                   </svg>
                   <i class="fa fa-gears"></i>
                 </div>
-                <h4><a href="">Dynamic Threshold Module</a></h4>             
+                <h4><a href="" data-i18n="cogvsm.feat2">Dynamic Threshold Module</a></h4>             
             </div>
           </div>
 
@@ -196,7 +199,7 @@
                 </svg>
                 <i class="fa fa-network-wired"></i>
               </div>
-              <h4><a href="">Federated Learning (FL)</a></h4>
+              <h4><a href="" data-i18n="cogvsm.feat3">Federated Learning (FL)</a></h4>
               <p></p>
             </div>
           </div>
@@ -211,7 +214,7 @@
                 </svg>
                 <i class="fa fa-robot"></i>
               </div>
-              <h4><a href="">Deep Q-Network (DQN)</a></h4>
+              <h4><a href="" data-i18n="cogvsm.feat4">Deep Q-Network (DQN)</a></h4>
               <p></p>
             </div>
           </div>
@@ -220,13 +223,13 @@
           <!-- Two-Tiered Edge Computing -->
           <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 3%; width: 100%;">
             <div class="icon-box iconbox-blue">
-              <h3 style="color: rgb(0, 87, 105);">Two-Tiered Edge Computing</h3>
+              <h3 style="color: rgb(0, 87, 105);" data-i18n="cogvsm.edge_heading">Two-Tiered Edge Computing</h3>
               <br>
               <div class = "row">
                 
                 <img src="assets/img/thesis/sockets.png" style="width:35%; margin-left: 0%;">
 
-                <p style="text-align: justify; font-size: 14px;  margin-left: 0%;width: 80%; margin-right: 2%; margin-top: 0%; width: 60%;" >
+                <p style="text-align: justify; font-size: 14px;  margin-left: 0%;width: 80%; margin-right: 2%; margin-top: 0%; width: 60%;" data-i18n="cogvsm.edge_body">
                   In this project, the two-tiered edge computing framework involves two interconnected edge nodes to optimize video surveillance tasks. 
                   The first tier, or edge node, focuses on real-time object detection using the YOLO algorithm, processing video frames directly from IP cameras. 
                   This immediate detection reduces latency by performing computational tasks close to the data source. 
@@ -249,13 +252,13 @@
           <!-- Dynamic threshold module -->
           <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 3%; width: 100%;">
             <div class="icon-box iconbox-blue">
-              <h3 style="color: rgb(0, 87, 105);">DQN-based Controlling Threshold Module</h3>
+              <h3 style="color: rgb(0, 87, 105);" data-i18n="cogvsm.dqn_heading">DQN-based Controlling Threshold Module</h3>
               <br>
               <div class = "row">
                 
                 <img src="assets/img/thesis/threshold.png" style="width:35%; margin-left: 0%;;">
 
-                <p style="text-align: justify; font-size: 14px;  margin-left: 0%;width: 80%; margin-right: 2%; margin-top: 0%; width: 60%;" >
+                <p style="text-align: justify; font-size: 14px;  margin-left: 0%;width: 80%; margin-right: 2%; margin-top: 0%; width: 60%;" data-i18n="cogvsm.dqn_body">
                   The DQN-based dynamic controlling threshold module acts as the decision-making center that intelligently determines the controlling threshold time value in the overall system. 
                   Here, the threshold time value represents a timeout for deciding whether to hold or release the DL model. 
                   The DQN model receives the predicted object occurrence outcomes generated by the LSTM model. 
@@ -274,11 +277,11 @@
           <!-- FL-based LSTM module -->
           <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 3%; width: 100%;">
             <div class="icon-box iconbox-blue">
-              <h3 style="color: rgb(0, 87, 105);">FL-based LSTM Module for Object Occurrence Prediction</h3>
+              <h3 style="color: rgb(0, 87, 105);" data-i18n="cogvsm.fl_heading">FL-based LSTM Module for Object Occurrence Prediction</h3>
               <br>
               <div class = "row">   
                 <img src="assets/img/thesis/FL_in_VS.png" style="width:40%; margin-left: 7%; margin-top: 0%;">
-                <p style="text-align: justify; font-size: 14px;  margin-left: 50%; margin-top: -250px; width: 45%; height: 45%;" >
+                <p style="text-align: justify; font-size: 14px;  margin-left: 50%; margin-top: -250px; width: 45%; height: 45%;" data-i18n="cogvsm.fl_body">
                   FL in this project allows the LSTM model to be trained on data from multiple cameras without transferring the raw video data to a centralized server, preserving privacy and reducing the risk of data breaches. 
                   Each client optimizes a local model based on its data and shares this model with an FL server, which aggregates these local models to update a global model. 
                   This global model is then redistributed to all clients for further refinement, ensuring collaborative learning. 
@@ -288,9 +291,9 @@
               </div>
                   <br>
                   <br>
-                  <h4>Evaluation Results</h4>
+                  <h4 data-i18n="cogvsm.eval_heading">Evaluation Results</h4>
                   <div class="row">
-                    <p style="text-align: justify; font-size: 14px; width: 40%; margin-left: 7%; margin-top: 50px;">
+                    <p style="text-align: justify; font-size: 14px; width: 40%; margin-left: 7%; margin-top: 50px;" data-i18n="cogvsm.fl_eval_body">
                       The evaluation of the FL-based LSTM model in this project demonstrates notable advantages despite some performance differences compared to centralized training. 
                       The model was trained for 200 rounds, with results measured using the RMSE metric, revealing that centralized training achieved a lower RMSE value of 0.79. 
                       However, the FL-based approach offers significant benefits in terms of data privacy and security by keeping data localized and enabling secure collaboration among multiple clients. 
@@ -306,11 +309,11 @@
           <!-- Deep RL-based Controlling module -->
           <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 3%; width: 100%;">
             <div class="icon-box iconbox-blue">
-              <h3 style="color: rgb(0, 87, 105);">Deep RL-based Dynamic Controlling Threshold Module</h3>
+              <h3 style="color: rgb(0, 87, 105);" data-i18n="cogvsm.drl_heading">Deep RL-based Dynamic Controlling Threshold Module</h3>
               <br>
               <div class = "row">   
                 <img src="assets/img/thesis/DQN.png" style="width:40%; margin-left: 7%; margin-top: 0%;">
-                <p style="text-align: justify; font-size: 14px;  margin-left: 50%; margin-top: -250px; width: 45%; height: 45%;" >
+                <p style="text-align: justify; font-size: 14px;  margin-left: 50%; margin-top: -250px; width: 45%; height: 45%;" data-i18n="cogvsm.drl_body">
                   The DQN (Deep Q-Network) model is employed to optimize the threshold time for releasing the DL model in the video surveillance system. 
                   This model-free approach relies on the predictions from the LSTM model, which captures temporal dependencies of object occurrences, as input to the DQN. 
                   The DQN model learns an optimal policy for threshold time adjustment based on these inputs, ensuring efficient resource utilization. 
@@ -320,9 +323,9 @@
               </div>
                   <br>
                   <br>
-                  <h4>Evaluation Results</h4>
+                  <h4 data-i18n="cogvsm.eval_heading">Evaluation Results</h4>
                   <div class="row">
-                    <p style="text-align: justify; font-size: 14px; width: 40%; margin-left: 7%; margin-top: 50px;">
+                    <p style="text-align: justify; font-size: 14px; width: 40%; margin-left: 7%; margin-top: 50px;" data-i18n="cogvsm.drl_eval_body">
                       The evaluation of the DQN-based controlling threshold module highlights its advantages in enhancing the energy efficiency of the video surveillance system. 
                       During training, the DQN model used LSTM predictions as input states and quickly learned to balance GPU memory savings with model reloading latency, achieving stable performance after about 50 episodes. 
                       The average cumulative reward, which grew rapidly in the initial 20 episodes, indicates the model's effectiveness in optimizing the threshold. 
@@ -338,11 +341,11 @@
           <!-- Performance comparision -->
           <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100" style="margin-top: 3%; width: 100%;">
             <div class="icon-box iconbox-blue">
-              <h3 style="color: rgb(0, 87, 105);">Performance Comparison</h3>
+              <h3 style="color: rgb(0, 87, 105);" data-i18n="cogvsm.perf_heading">Performance Comparison</h3>
               <br>
               <div class = "row">   
                 <img src="assets/img/thesis/theta10.png" style="width:40%; height: 300px; margin-left: 7%; margin-top: 0%;">
-                <p style="text-align: justify; font-size: 14px;  margin-left: 50%; margin-top: -300px; width: 45%; height: 45%;" >
+                <p style="text-align: justify; font-size: 14px;  margin-left: 50%; margin-top: -300px; width: 45%; height: 45%;" data-i18n="cogvsm.perf_body">
                   The evaluation results highlighted in the figure right side showcase the advantages of the proposed framework in terms of efficient GPU memory utilization. 
                   The figure compares the performance of five different frameworks, demonstrating that the proposed framework, aided by LSTM predictions and DQN-based threshold control, outperformed others in managing GPU resources. 
                   The efficient release of GPU memory was particularly noticeable during intervals of object absence, where the proposed framework adapted swiftly to changing conditions. 
@@ -352,9 +355,9 @@
               </div>
                   <br>
                   <br>
-                  <h4>Results</h4>
+                  <h4 data-i18n="cogvsm.results_label">Results</h4>
                   <div class="row">
-                    <p style="text-align: justify; font-size: 14px; width: 40%; margin-left: 7%; margin-top: 100px;">
+                    <p style="text-align: justify; font-size: 14px; width: 40%; margin-left: 7%; margin-top: 100px;" data-i18n="cogvsm.perf_results_body">
                       The bar graph in Figure 9 highlights the evaluation results of average GPU memory usage when \(\theta_m = 10\) seconds. 
                       Our proposed framework demonstrated significantly optimized memory utilization at 29.23%, followed closely by our proposed framework with CNN at 30.11%. 
                       This efficiency stems from the novel integration of FL-based LSTM and DQN-based intelligent controlling threshold modules, which dynamically manage GPU resources based on real-time predictions and decisions. 
@@ -376,8 +379,8 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h4>Deep Reinforcement Learning-Empowered Cost-Effective Federated Video Surveillance Management Framework</h4>
-      <p>For more information</p>
+      <h4 data-i18n="cogvsm.footer_title">Deep Reinforcement Learning-Empowered Cost-Effective Federated Video Surveillance Management Framework</h4>
+      <p data-i18n="cogvsm.footer_info">For more information</p>
 
       <style>
         .download-button {
@@ -401,7 +404,7 @@
 
 
 <a href="https://www.mdpi.com/1424-8220/24/7/2158" download class="download-button" data-glightbox="type: external" target="_blank">
-  <i class="bx bx-book-reader"></i>&nbsp;&nbsp;Read Paper</a>
+  <i class="bx bx-book-reader"></i>&nbsp;&nbsp;<span data-i18n="cogvsm.read_paper">Read Paper</span></a>
 &nbsp;&nbsp; <!-- Add some space between the buttons -->
 <a href="https://github.com/dilwolf/CogVSM" download class="download-button" target="_blank">
   <i class="bx bxl-github"></i>&nbsp;&nbsp;GitHub
@@ -415,7 +418,7 @@
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Dilshod B</span></strong>. All Rights Reserved
+        <span data-i18n="common.copyright">&copy; Copyright <strong><span>Dilshod B</span></strong>. All Rights Reserved</span>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -442,6 +445,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="translations.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
