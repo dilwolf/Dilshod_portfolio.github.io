@@ -1,0 +1,11 @@
+# Claude Code (local settings, plans, memory — machine-specific)
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+Claude.md
+
+# Editor
+.vscode/
+.idea/
