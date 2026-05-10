@@ -291,6 +291,90 @@
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+
+  /* Metrics card: center and full-width on mobile */
+  .results-hero-card {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Results Hero Card (falldown page — metric stats in hero)
+--------------------------------------------------------------*/
+.results-hero-card {
+  background: linear-gradient(135deg, #0a3d62 0%, #085a98 100%);
+  border-radius: 10px;
+  padding: 28px 32px;
+  color: #fff;
+  width: 100%;
+  max-width: 340px;
+}
+
+.results-hero-card h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 20px;
+}
+
+.metric-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 14px;
+}
+
+.metric-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.metric-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  min-width: 80px;
+}
+
+.metric-label {
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.3;
+}
+
+/*--------------------------------------------------------------
+# Results Table (falldown page)
+--------------------------------------------------------------*/
+.project-results-table {
+  font-size: clamp(13px, 1.15vw, 14.5px);
+}
+
+.project-results-table thead tr {
+  background-color: #085a98;
+  color: #fff;
+}
+
+.project-results-table thead th {
+  font-weight: 600;
+  border-color: #085a98;
+  padding: 10px 16px;
+}
+
+.project-results-table tbody tr:nth-child(even) {
+  background-color: #f0f6ff;
+}
+
+.project-results-table tbody td {
+  padding: 10px 16px;
+  vertical-align: middle;
 }
 
 /*--------------------------------------------------------------

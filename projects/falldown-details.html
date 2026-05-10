@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dilshod's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <link href="../assets/css/project-pages.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume - v4.9.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <a id="lang-btn" href="#" onclick="toggleLang(); return false;" class="flag-button">
+      <img id="lang-flag" src="https://flagicons.lipis.dev/flags/4x3/kr.svg" alt="Flag" class="flag-icon">
+      <span id="lang-text" class="flag-text">한국어</span>
+    </a>
+  </header><!-- End Header -->
+
+  <!-- ======= Projects Section ======= -->
+  <section id="projects" class="projects">
+    <div class="container" data-aos="fade-up">
+
+      <!-- Hero: Title + Banner -->
+      <div class="row page-hero">
+        <div class="col-12 col-lg-6 title-col d-flex align-items-center justify-content-center justify-content-lg-start text-center text-lg-start mb-3 mb-lg-0">
+          <h2 class="page-hero-title" data-i18n="falldown.page_title">Fall-Down Detection for Real-Time Surveillance Using Spatio-Temporal Deep Learning</h2>
+        </div>
+        <div class="col-12 col-lg-6 text-center">
+          <!-- TODO: replace with falldown banner image -->
+          <img src="../assets/img/falldown/main_hero.png" class="page-banner-img" alt="Fall-Down Detection Banner">
+        </div>
+      </div>
+
+      <!-- Intro Box -->
+      <div class="icon-box iconbox-teal page-intro" data-aos="zoom-in" data-aos-delay="300">
+        <h2 class="page-subtitle" data-i18n="falldown.subtitle">Real-Time Fall Detection for Safety-Critical Surveillance Environments</h2>
+        <p data-i18n="falldown.intro">Falls are one of the most critical safety incidents in public and monitored environments. Delayed detection can lead to serious consequences, especially in elderly care facilities, hospitals, and industrial sites. This project develops a real-time fall-down detection system for the AXEyes video analytics platform, achieving 89.7% mAP by combining spatio-temporal action recognition with frame-sequence analysis to distinguish genuine fall events from visually similar normal movements, reducing false alerts by 19%.</p>
+      </div>
+
+      <!-- Highlights + Demo Video -->
+      <div class="row align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-12 col-md-5 mb-3 mb-md-0">
+          <div class="icon-box iconbox-blue page-highlights h-100">
+            <h4><a style="color: rgb(0, 87, 105);" data-i18n="falldown.highlights_heading">Highlights</a></h4>
+            <br>
+            <p data-i18n="falldown.highlight1"><i class='bx bxs-badge-check' style="color: crimson;"></i>&nbsp; <strong>Spatio-Temporal Detection:</strong> Fall events are detected across multiple consecutive frames rather than single images, capturing the motion dynamics that define a genuine fall action and eliminating false positives caused by sudden crouching, sitting, or camera angle changes.</p>
+            <br>
+            <p data-i18n="falldown.highlight2"><i class="bx bxs-badge-check" style="color:darkgoldenrod"></i>&nbsp; <strong>High Accuracy in Real-World Conditions:</strong> Achieved 89.7% mAP on a custom-curated surveillance dataset collected from real CCTV footage under varied lighting, camera angles, and occlusion conditions.</p>
+            <br>
+            <p data-i18n="falldown.highlight3"><i class="bx bxs-badge-check" style="color:green"></i>&nbsp; <strong>19% False Alert Reduction:</strong> Post-processing logic filters ambiguous detections using frame-sequence confidence scoring, significantly reducing operator fatigue caused by unnecessary alerts.</p>
+            <br>
+            <p data-i18n="falldown.highlight4"><i class="bx bxs-badge-check" style="color:rgb(19, 0, 128)"></i>&nbsp; <strong>Production Deployment:</strong> Integrated into the AXEyes VA system monitoring 100+ critical infrastructure CCTV cameras across enterprise and government-level facilities.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 d-flex align-items-center">>
+          <video autoplay loop muted playsinline class="page-demo-video">
+            <source src="https://github.com/dilwolf/Dilshod_portfolio.github.io/raw/main/assets/video/falldown_event.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Key Features Heading -->
+      <div class="section-title page-features-title">
+        <h2 data-i18n="falldown.features_heading">Key Features</h2>
+        <p></p>
+      </div>
+
+      <!-- Feature 1: YOWOv3 Spatio-Temporal -->
+      <div class="row page-feature-row" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-12 col-md-4 page-icon-col d-flex align-items-stretch">
+          <div class="icon-box iconbox-teal w-100">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+              </svg>
+              <i class="bx bx-time-five"></i>
+            </div>
+            <h4><a data-i18n="falldown.feat1">Spatio-Temporal Action Recognition with YOWOv3</a></h4>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 page-desc d-flex align-items-stretch">
+          <div class="icon-box iconbox-teal w-100">
+            <p data-i18n="falldown.feat1_body">Fall-down detection requires understanding motion over time, not just appearance in a single frame. YOWOv3 (You Only Watch Once) combines a 3D CNN for temporal modeling across frame sequences with a 2D CNN for spatial feature extraction per frame. This dual-stream architecture captures both the spatial appearance of a person and the temporal motion pattern of a fall, enabling reliable detection even in complex scenes. The model processes short clips of consecutive frames, learning to distinguish the characteristic trajectory and body dynamics of a fall from superficially similar activities such as sitting, bending, or sudden crouching.</p>
+            <!-- TODO: replace with falldown feature video -->
+            <video autoplay loop muted playsinline>
+              <source src="https://github.com/dilwolf/Dilshod_portfolio.github.io/raw/main/assets/video/falldown_results.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2: Custom Dataset Pipeline -->
+      <div class="row page-feature-row" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-12 col-md-4 page-icon-col d-flex align-items-stretch">
+          <div class="icon-box iconbox-red w-100">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+              </svg>
+              <i class="bx bx-data"></i>
+            </div>
+            <h4><a data-i18n="falldown.feat2">Custom Surveillance Dataset Pipeline</a></h4>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 page-desc d-flex align-items-stretch">
+          <div class="icon-box iconbox-teal w-100">
+            <p data-i18n="falldown.feat2_body">A high-quality custom video dataset was curated from real CCTV footage covering diverse fall scenarios: forward falls, backward falls, side falls, and near-fall motions across different environments including corridors, elderly care rooms, and open areas. Each clip was carefully annotated with temporal boundaries to ensure the model learns precise action onset and completion. The dataset reflects real-world surveillance conditions — variable lighting, mixed camera resolutions, and partial occlusions — ensuring that trained models generalize robustly to the deployment environment rather than overfitting to clean benchmark data.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: Frame-Sequence Analysis -->
+      <div class="row page-feature-row" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-12 col-md-4 page-icon-col d-flex align-items-stretch">
+          <div class="icon-box iconbox-teal w-100">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+              </svg>
+              <i class="bx bx-layer"></i>
+            </div>
+            <h4><a data-i18n="falldown.feat3">Frame-Sequence Analysis for False Alert Reduction</a></h4>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 page-desc d-flex align-items-stretch">
+          <div class="icon-box iconbox-teal w-100">
+            <p data-i18n="falldown.feat3_body">Single-frame detection of falls is highly unreliable due to visual similarity with normal activities such as sitting, bending, or lying down. The system analyzes sequences of frames and applies confidence aggregation across the temporal window before triggering an alert. Per-frame detection scores are accumulated over the clip and only cross a threshold when the sustained pattern matches a genuine fall trajectory. This approach reduced false event alerts by 19% compared to frame-by-frame inference, directly lowering operator workload in continuous monitoring deployments.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4: Custom Augmentation -->
+      <div class="row page-feature-row" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-12 col-md-4 page-icon-col d-flex align-items-stretch">
+          <div class="icon-box iconbox-red w-100">
+            <div class="icon">
+              <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+              </svg>
+              <i class="bx bx-shuffle"></i>
+            </div>
+            <h4><a data-i18n="falldown.feat4">Custom Data Augmentation Strategy</a></h4>
+          </div>
+        </div>
+        <div class="col-12 col-md-8 page-desc d-flex align-items-stretch">
+          <div class="icon-box iconbox-teal w-100">
+            <p data-i18n="falldown.feat4_body">To improve model robustness across real-world surveillance conditions, a custom augmentation pipeline was applied during training. Augmentations include random brightness and contrast variation to simulate day/night CCTV conditions, horizontal flipping for directional invariance, temporal jitter to handle variable frame rates, and partial occlusion simulation to handle cases where a person falls partially out of frame or is briefly obstructed. This strategy was critical for preventing overfitting to a single camera setup and ensuring reliable detection across the 100+ camera network in production.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Table -->
+      <div class="row page-feature-row" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-12">
+          <div class="icon-box iconbox-blue w-100">
+            <h4 style="color: rgb(0, 87, 105); margin-bottom: 1.2rem;" data-i18n="falldown.results_heading">Results</h4>
+            <div class="table-responsive">
+              <table class="table table-bordered project-results-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="falldown.table_metric">Metric</th>
+                    <th data-i18n="falldown.table_value">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-i18n="falldown.row1_metric">mAP</td>
+                    <td><strong>89.7%</strong></td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="falldown.row2_metric">False Alert Reduction</td>
+                    <td><strong>19%</strong></td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="falldown.row3_metric">Detection Type</td>
+                    <td data-i18n="falldown.row3_value">Spatio-Temporal (multi-frame)</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="falldown.row4_metric">Deployment</td>
+                    <td data-i18n="falldown.row4_value">AXEyes VA System</td>
+                  </tr>
+                  <tr>
+                    <td data-i18n="falldown.row5_metric">Monitored Cameras</td>
+                    <td data-i18n="falldown.row5_value">100+ critical infrastructure CCTV</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Projects Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3 data-i18n="falldown.footer_title">Surveillance Abnormal Behavior Detection — Fall-Down</h3>
+      <p data-i18n="falldown.footer_info">Developed for AXEyes VA System | Axion, Seongnam, South Korea<br>Production system — code and dataset are proprietary and confidential.</p>
+      <div class="social-links">
+        <a href="https://github.com/dilwolf/YOWOv3-Improved" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+      </div>
+      <div class="copyright">
+        <span data-i18n="common.copyright">&copy; Copyright <strong><span>Dilshod B</span></strong>. All Rights Reserved</span>
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/typed.js/typed.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../translations.js"></script>
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
