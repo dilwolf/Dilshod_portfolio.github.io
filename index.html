@@ -67,7 +67,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Dilshod B</h1>
-      <p><span class="typed" data-typed-items="AI/ML Engineer, Computer Vision, NLP"></span></p>
+      <p><span class="typed" data-typed-items="AI/ML Engineer, Computer Vision, Action Recognition"></span data-i18n="nav.author"></p>
       <div class="social-links">
         <a href="https://github.com/dilwolf" class="github" target="_blank"><i class="bx bxl-github"></i></a>
         <a href="https://www.linkedin.com/in/dilshod-bazarov/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
@@ -92,17 +92,17 @@
             <!-- Second Column (Text) -->
             <div class="contentWrapper">
               <div class="content">
-                <p style="font-size: 17px;" data-i18n="about.body">
-                  ML/<strong>Computer Vision</strong> (CV) Engineer with 3+ years of production ML and research experience specializing in <strong>real-time video surveillance</strong> and <strong>video analytics</strong> systems. Proven experience for AI optimization and enterprise Vision AI solutions.
+                <p data-i18n="about.body">
+                  <strong>ML/Computer Vision</strong> (CV) Engineer with 3+ years of production ML and research experience specializing in <strong>real-time video surveillance</strong> and <strong>video analytics</strong> systems. Proven experience for AI optimization and enterprise Vision AI solutions.
                   <br><br>
                   &bull; Published 2 <strong>SCI papers</strong> on federated and reinforcement learning for resource-efficient surveillance systems.<br>
                   &bull; <strong>KISA-certification</strong> acquired in intelligent CCTV performance testing (RGB/IR intrusion, loitering detection).<br>
                   &bull; Expert in developing / deploying highly accurate and scalable <strong>CV models</strong> using <strong>PyTorch</strong> and <strong>OpenCV</strong> for safety-critical surveillance applications.
                 </p>
-                <h4 style="font-family:'Times New Roman', Times, serif; font-size: 20px;" data-i18n="about.resume_heading">Download My Resume</h4>
+                <h4 class="about-resume-heading" data-i18n="about.resume_heading">Download My Resume</h4>
                 <br>
                 <div class="buttonWrapper">
-                  <a href="https://drive.google.com/file/d/1P2a1au8uexLigAwgCoYIz1p6ezumNZxX/view?usp=sharing" target="_blank" download class="download-button" style="font-family:'Times New Roman', Times, serif; font-size: 20px;" data-i18n-href="about.resume_href"><span data-i18n="about.resume_btn">Resume</span> <i class="bx bx-download"></i></a>
+                  <a href="https://drive.google.com/file/d/1P2a1au8uexLigAwgCoYIz1p6ezumNZxX/view?usp=sharing" target="_blank" download class="download-button" data-i18n-href="about.resume_href"><span data-i18n="about.resume_btn">Resume</span> <i class="bx bx-download"></i></a>
                 </div>
               </div>
             </div>
@@ -163,9 +163,17 @@
           <div class="tech-box">
             <div class="tech-title">
               <div class="tech-img">
-                <img src="./assets/img/tech/scikit-learn.svg" class="skills-icon">
+                <img src="./assets/img/tech/numpy.svg" class="skills-icon">
               </div>
-              <h3 data-i18n="tech.scikit">Scikit</h3>
+              <h3 data-i18n="tech.numpy">NumPy</h3>
+            </div>
+          </div>
+          <div class="tech-box">
+            <div class="tech-title">
+              <div class="tech-img">
+                <img src="./assets/img/tech/ultralytics.svg" class="skills-icon">
+              </div>
+              <h3>Ultralytics</h3>
             </div>
           </div>
           <div class="tech-box">
@@ -206,6 +214,14 @@
                 <img src="./assets/img/tech/aws.png" class="skills-icon">
               </div>
               <h3>AWS</h3>
+            </div>
+          </div>
+          <div class="tech-box">
+            <div class="tech-title">
+              <div class="tech-img">
+                <img src="./assets/img/tech/ubuntu.png" class="skills-icon">
+              </div>
+              <h3>Ubuntu</h3>
             </div>
           </div>
           <div class="tech-box">
@@ -317,7 +333,7 @@
               <h4 data-i18n="project1.title">Energy-efficient Video Surveillance</h4>
               <p data-i18n="project1.desc">A cost-effective federated video surveillance management framework that optimizes GPU usage and reduces energy consumption through dynamic threshold control in a two-tiered edge computing architecture using Deep Q-Networks and Federated Learning.</p>
               <br>
-              <a href="CogVSM.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details" data-i18n-href="project1.readmore_href">
+              <a href="projects/CogVSM.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details" data-i18n-href="project1.readmore_href">
                 <i class="bx bx-book-reader"></i>&nbsp;&nbsp;<span data-i18n="common.readmore">Read More</span></a>
               &nbsp;&nbsp;
               <a href="https://github.com/dilwolf/CogVSM" title="GitHub" target="_blank">
@@ -328,12 +344,12 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-pink">
-              <img src="assets/img/football/player_detect.png" class="project-thumb" alt="Football player detection">
+              <img src="assets/img/football/football_analysis_main.png" class="project-thumb" alt="Football player detection">
               <h4 data-i18n="project2.title">Football Analysis</h4>
               <p data-i18n="project2.desc">A comprehensive AI-driven project for football analysis, leveraging advanced techniques like YOLO, Kmeans clustering, optical flow, and perspective transformation for unparalleled match insights, player performance metrics, and real-world data precision.</p>
 
               <br>
-              <a href="football-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details" data-i18n-href="project2.readmore_href"><i class="bx bx-book-reader"></i>&nbsp;&nbsp;<span data-i18n="common.readmore">Read More</span></a>
+              <a href="projects/football-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details" data-i18n-href="project2.readmore_href"><i class="bx bx-book-reader"></i>&nbsp;&nbsp;<span data-i18n="common.readmore">Read More</span></a>
               &nbsp;&nbsp;
               <a href="https://github.com/dilwolf/Football_Analysis_Project" title="GitHub" target="_blank">
                 <i class="bx bxl-github"></i>&nbsp;&nbsp;<span data-i18n="common.github">GitHub</span>
