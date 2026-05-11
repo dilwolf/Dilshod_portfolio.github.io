@@ -66,7 +66,7 @@
       <!-- Intro Box -->
       <div class="icon-box iconbox-teal page-intro" data-aos="zoom-in" data-aos-delay="300">
         <h2 class="page-subtitle" data-i18n="falldown.subtitle">Real-Time Fall Detection for Safety-Critical Surveillance Environments</h2>
-        <p data-i18n="falldown.intro">Falls are one of the most critical safety incidents in public and monitored environments. Delayed detection can lead to serious consequences, especially in elderly care facilities, hospitals, and industrial sites. This project develops a real-time fall-down detection system for the AXEyes video analytics platform, achieving 89.7% mAP by combining spatio-temporal action recognition with frame-sequence analysis to distinguish genuine fall events from visually similar normal movements, reducing false alerts by 19%.</p>
+        <p data-i18n="falldown.intro">Falls are one of the most critical safety incidents in public and monitored environments. Delayed detection or alarm about it can lead to serious consequences, especially in elderly care facilities, hospitals, and industrial sites. This project has been developed a real-time fall-down detection system for the AXEyes video analytics platform, achieving 89.7% mAP by combining spatio-temporal action recognition with frame-sequence analysis to distinguish genuine fall events from visually similar normal movements, reducing false alerts by 19%.</p>
       </div>
 
       <!-- Highlights + Demo Video -->
@@ -85,7 +85,7 @@
           </div>
         </div>
         <div class="col-12 col-md-7 d-flex align-items-center">
-          <video autoplay loop muted playsinline class="page-demo-video">
+          <video controls class="page-demo-video">
             <source src="https://github.com/dilwolf/Dilshod_portfolio.github.io/raw/main/assets/video/falldown_event.mp4" type="video/mp4">
           </video>
         </div>
@@ -114,7 +114,7 @@
           <div class="icon-box iconbox-teal w-100">
             <p data-i18n="falldown.feat1_body">Fall-down detection requires understanding motion over time, not just appearance in a single frame. YOWOv3 (You Only Watch Once) combines a 3D CNN for temporal modeling across frame sequences with a 2D CNN for spatial feature extraction per frame. This dual-stream architecture captures both the spatial appearance of a person and the temporal motion pattern of a fall, enabling reliable detection even in complex scenes. The model processes short clips of consecutive frames, learning to distinguish the characteristic trajectory and body dynamics of a fall from superficially similar activities such as sitting, bending, or sudden crouching.</p>
             <!-- TODO: replace with falldown feature video -->
-            <video autoplay loop muted playsinline>
+            <video controls>
               <source src="https://github.com/dilwolf/Dilshod_portfolio.github.io/raw/main/assets/video/falldown_results.mp4" type="video/mp4">
             </video>
           </div>
