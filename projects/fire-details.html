@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -44,7 +44,7 @@
   <header id="header" class="d-flex flex-column justify-content-center">
     <a id="lang-btn" href="#" onclick="toggleLang(); return false;" class="flag-button">
       <img id="lang-flag" src="https://flagicons.lipis.dev/flags/4x3/kr.svg" alt="Flag" class="flag-icon">
-      <span id="lang-text" class="flag-text">한국어</span>
+      <span id="lang-text" class="flag-text">í•œêµ­ì–´</span>
     </a>
   </header><!-- End Header -->
 
@@ -58,14 +58,14 @@
           <h2 class="page-hero-title" data-i18n="fire.page_title">Fire and Smoke Detection for Real-Time Surveillance Using Spatio-Temporal Deep Learning</h2>
         </div>
         <div class="col-12 col-lg-6 text-center">
-          <img src="../assets/img/fire/fp_banner.png" class="page-banner-img" alt="Fire and Smoke Detection Banner">
+          <img src="../assets/img/fire/fp_banner.webp" class="page-banner-img" alt="Fire and Smoke Detection Banner">
         </div>
       </div>
 
       <!-- Intro Box -->
       <div class="icon-box iconbox-teal page-intro" data-aos="zoom-in" data-aos-delay="300">
         <h2 class="page-subtitle" data-i18n="fire.subtitle">Real-Time Fire and Smoke Detection for Safety-Critical Surveillance Environments</h2>
-        <p data-i18n="fire.intro">Fire and smoke are among the most time-critical threats in monitored environments. Early and accurate detection can prevent catastrophic damage across industrial sites, warehouses, and public infrastructure. This project develops a real-time fire and smoke detection system for the AXEyes video analytics platform, achieving 89% mAP by combining spatio-temporal action recognition with frame-sequence analysis. A key architectural decision was made early: RF-DETR single-frame inference was evaluated but abandoned due to excessive false positives caused by objects visually similar to fire and smoke — lighting, steam, reflections. The final system treats fire as a temporal action rather than a static object, reducing false alerts by 25%.</p>
+        <p data-i18n="fire.intro">Fire and smoke are among the most time-critical threats in monitored environments. Early and accurate detection can prevent catastrophic damage across industrial sites, warehouses, and public infrastructure. This project develops a real-time fire and smoke detection system for the AXEyes video analytics platform, achieving 89% mAP by combining spatio-temporal action recognition with frame-sequence analysis. A key architectural decision was made early: RF-DETR single-frame inference was evaluated but abandoned due to excessive false positives caused by objects visually similar to fire and smoke â€” lighting, steam, reflections. The final system treats fire as a temporal action rather than a static object, reducing false alerts by 25%.</p>
       </div>
 
       <!-- Highlights + Demo Video -->
@@ -86,9 +86,7 @@
           </div>
         </div>
         <div class="col-12 col-md-7 d-flex align-items-center">
-          <video controls class="page-demo-video">
-            <source src="https://github.com/dilwolf/Dilshod_portfolio.github.io/raw/main/assets/video/fire_event.mp4" type="video/mp4">
-          </video>
+          <iframe class="page-demo-video" src="https://www.youtube.com/embed/U9AzRMXK-RE" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; width:100%; aspect-ratio:16/9;"></iframe>
         </div>
       </div>
 
@@ -113,10 +111,8 @@
         </div>
         <div class="col-12 col-md-8 page-desc d-flex align-items-stretch">
           <div class="icon-box iconbox-teal w-100">
-            <p data-i18n="fire.feat1_body">The project began by evaluating RF-DETR for single-image fire and smoke detection. Testing revealed that per-frame inference generates excessive false positives — objects such as steam vents, bright light sources, reflective surfaces, and white smoke-like backgrounds are visually indistinguishable from fire and smoke in a single frame. This led to the decision to treat fire detection as a temporal action recognition problem, requiring multi-frame sequence modeling rather than single-image object detection.</p>
-            <video controls>
-              <source src="https://github.com/dilwolf/Dilshod_portfolio.github.io/raw/main/assets/video/fire_results.mp4" type="video/mp4">
-            </video>
+            <p data-i18n="fire.feat1_body">The project began by evaluating RF-DETR for single-image fire and smoke detection. Testing revealed that per-frame inference generates excessive false positives â€” objects such as steam vents, bright light sources, reflective surfaces, and white smoke-like backgrounds are visually indistinguishable from fire and smoke in a single frame. This led to the decision to treat fire detection as a temporal action recognition problem, requiring multi-frame sequence modeling rather than single-image object detection.</p>
+            <iframe src="https://www.youtube.com/embed/NOAqe_DvrUo" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; width:100%; aspect-ratio:16/9;"></iframe>
           </div>
         </div>
       </div>
@@ -257,7 +253,7 @@
   <footer id="footer">
     <div class="container">
       <h3 data-i18n="fire.footer_title">Surveillance Fire and Smoke Detection</h3>
-      <p data-i18n="fire.footer_info">Developed for AXEyes VA System | Axion, Seongnam, South Korea<br>Production system — code and dataset are proprietary and confidential.</p>
+      <p data-i18n="fire.footer_info">Developed for AXEyes VA System | Axion, Seongnam, South Korea<br>Production system â€” code and dataset are proprietary and confidential.</p>
       <div class="social-links">
         <a href="https://github.com/dilwolf/Football_Analysis_Project" class="github" target="_blank"><i class="bx bxl-github"></i></a>
       </div>
@@ -290,3 +286,4 @@
 </body>
 
 </html>
+

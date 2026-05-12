@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -44,7 +44,7 @@
   <header id="header" class="d-flex flex-column justify-content-center">
     <a id="lang-btn" href="#" onclick="toggleLang(); return false;" class="flag-button">
       <img id="lang-flag" src="https://flagicons.lipis.dev/flags/4x3/kr.svg" alt="Flag" class="flag-icon">
-      <span id="lang-text" class="flag-text">한국어</span>
+      <span id="lang-text" class="flag-text">í•œêµ­ì–´</span>
     </a>
   </header><!-- End Header -->
 
@@ -59,7 +59,7 @@
         </div>
         <div class="col-12 col-lg-6 text-center">
           <!-- TODO: replace with falldown banner image -->
-          <img src="../assets/img/falldown/main_hero.png" class="page-banner-img" alt="Fall-Down Detection Banner">
+          <img src="../assets/img/falldown/main_hero.webp" class="page-banner-img" alt="Fall-Down Detection Banner">
         </div>
       </div>
 
@@ -85,9 +85,7 @@
           </div>
         </div>
         <div class="col-12 col-md-7 d-flex align-items-center">
-          <video controls class="page-demo-video">
-            <source src="https://github.com/dilwolf/Dilshod_portfolio.github.io/raw/main/assets/video/falldown_event.mp4" type="video/mp4">
-          </video>
+          <iframe class="page-demo-video" src="https://www.youtube.com/embed/ktJCOMM1x18" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; width:100%; aspect-ratio:16/9;"></iframe>
         </div>
       </div>
 
@@ -114,9 +112,7 @@
           <div class="icon-box iconbox-teal w-100">
             <p data-i18n="falldown.feat1_body">Fall-down detection requires understanding motion over time, not just appearance in a single frame. YOWOv3 (You Only Watch Once) combines a 3D CNN for temporal modeling across frame sequences with a 2D CNN for spatial feature extraction per frame. This dual-stream architecture captures both the spatial appearance of a person and the temporal motion pattern of a fall, enabling reliable detection even in complex scenes. The model processes short clips of consecutive frames, learning to distinguish the characteristic trajectory and body dynamics of a fall from superficially similar activities such as sitting, bending, or sudden crouching.</p>
             <!-- TODO: replace with falldown feature video -->
-            <video controls>
-              <source src="https://github.com/dilwolf/Dilshod_portfolio.github.io/raw/main/assets/video/falldown_results.mp4" type="video/mp4">
-            </video>
+            <iframe src="https://www.youtube.com/embed/89KBZ1YhBZY" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border:0; width:100%; aspect-ratio:16/9;"></iframe>
           </div>
         </div>
       </div>
@@ -136,7 +132,7 @@
         </div>
         <div class="col-12 col-md-8 page-desc d-flex align-items-stretch">
           <div class="icon-box iconbox-teal w-100">
-            <p data-i18n="falldown.feat2_body">A high-quality custom video dataset was curated from real CCTV footage covering diverse fall scenarios: forward falls, backward falls, side falls, and near-fall motions across different environments including corridors, elderly care rooms, and open areas. Each clip was carefully annotated with temporal boundaries to ensure the model learns precise action onset and completion. The dataset reflects real-world surveillance conditions — variable lighting, mixed camera resolutions, and partial occlusions — ensuring that trained models generalize robustly to the deployment environment rather than overfitting to clean benchmark data.</p>
+            <p data-i18n="falldown.feat2_body">A high-quality custom video dataset was curated from real CCTV footage covering diverse fall scenarios: forward falls, backward falls, side falls, and near-fall motions across different environments including corridors, elderly care rooms, and open areas. Each clip was carefully annotated with temporal boundaries to ensure the model learns precise action onset and completion. The dataset reflects real-world surveillance conditions â€” variable lighting, mixed camera resolutions, and partial occlusions â€” ensuring that trained models generalize robustly to the deployment environment rather than overfitting to clean benchmark data.</p>
           </div>
         </div>
       </div>
@@ -228,8 +224,8 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3 data-i18n="falldown.footer_title">Surveillance Abnormal Behavior Detection — Fall-Down</h3>
-      <p data-i18n="falldown.footer_info">Developed for AXEyes VA System | Axion, Seongnam, South Korea<br>Production system — code and dataset are proprietary and confidential.</p>
+      <h3 data-i18n="falldown.footer_title">Surveillance Abnormal Behavior Detection â€” Fall-Down</h3>
+      <p data-i18n="falldown.footer_info">Developed for AXEyes VA System | Axion, Seongnam, South Korea<br>Production system â€” code and dataset are proprietary and confidential.</p>
       <div class="social-links">
         <a href="https://github.com/dilwolf/YOWOv3-Improved" class="github" target="_blank"><i class="bx bxl-github"></i></a>
       </div>
@@ -262,3 +258,4 @@
 </body>
 
 </html>
+
