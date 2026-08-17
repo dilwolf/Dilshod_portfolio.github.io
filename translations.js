@@ -9,7 +9,7 @@ window.TRANSLATIONS = {
     "about.body": "I am an <strong> ML/Computer Vision</strong> (CV) Engineer with 3+ years of production ML and research experience specializing in <strong>real-time video surveillance</strong> and <strong>video analytics</strong> systems. Proven experience for AI optimization and enterprise Vision AI solutions.<br><br>&bull; Published 2 <strong>SCI papers</strong> on federated and reinforcement learning for resource-efficient surveillance systems.<br>&bull; <strong>KISA-certification</strong> acquired in intelligent CCTV performance testing (RGB/IR intrusion, loitering detection).<br>&bull; Expert in developing / deploying highly accurate and scalable <strong>CV models</strong> using <strong>PyTorch</strong> and <strong>OpenCV</strong> for safety-critical surveillance applications.",
     "about.resume_heading": "Download My Resume",
     "about.resume_btn": "Resume",
-    "about.resume_href": "https://drive.google.com/file/d/172xSsFZ0Wd0HLtfB0YfBcPorhio4KMh6/view?usp=sharing",
+    "about.resume_href": "https://drive.google.com/file/d/11Mseb9gZ5FkmRhbcSp-qsjiJGOmLQClo/view?usp=sharing",
     "facts.title": "Tools / Frameworks",
     "tech.python": "Python",
     "tech.pytorch": "PyTorch",
